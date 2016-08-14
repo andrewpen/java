@@ -1,10 +1,23 @@
 package com.apendleton.java;
+import java.util.Scanner;
 
 public class Main{
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println(args[0]);
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Please enter a value: ");
+        String input1 = sc.nextLine();
+        double d1 = Double.parseDouble(input1);
+
+        System.out.print("Please enter a value: ");
+        String input2 = sc.nextLine();
+        double d2 = Double.parseDouble(input2);
+
+        double result = d1 + d2;
+        System.out.print("The sum of the values is: " + result);
+
     }
 
 }
